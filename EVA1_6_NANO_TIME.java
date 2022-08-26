@@ -14,16 +14,12 @@ public class EVA1_6_NANO_TIME {
     public static void main(String[] args) {
         System.out.println(System.nanoTime());
         
-        int x = 5;
+        long inicio = System.nanoTime();
+        System.out.println(inicio);
         
-        System.out.println(System.nanoTime());
+        long fin = System.nanoTime();
+        long tiempo = fin - inicio;
         
-        int y = 3;
-        
-        System.out.println(System.nanoTime());
-        
-        System.out.println(x - y);
-        
-        System.out.println(System.nanoTime());
+        System.out.println(tiempo);
     }
 }
