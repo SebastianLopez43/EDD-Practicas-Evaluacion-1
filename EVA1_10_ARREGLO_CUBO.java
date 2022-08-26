@@ -16,7 +16,7 @@ public class EVA1_10_ARREGLO_CUBO {
         // 60 enteros
         int[][][] matrizCubo = new int[3][4][5];
         
-        // Primera dimensión (3 filas)
+        // Primera dimensión (3 columnas)
         for(int i = 0; i < matrizCubo.length; i++){
             // Segunda dimensión (4 filas)
             for(int j = 0; j < matrizCubo[i].length; j++) {
