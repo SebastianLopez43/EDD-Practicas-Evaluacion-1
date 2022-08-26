@@ -28,7 +28,7 @@ public class EVA1_10_ARREGLO_CUBO {
         }
         
         System.out.println("");
-        System.out.println("Tres matrices de tres filas, cuatro filas y 5 de profundidad");
+        System.out.println("Tres matrices de tres columnas, cuatro filas y 5 de profundidad");
         System.out.println("");
         
         for(int i = 0; i < matrizCubo.length; i++) {
