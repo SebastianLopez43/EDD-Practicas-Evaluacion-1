@@ -13,8 +13,8 @@ public class EVA1_11_EJEMPLO_ARREGLOS {
      */
     
     /*
-    - Pedir números de grupos *
-    - Pedir número de alumnos por grupo *
+    - Pedir números de grupos
+    - Pedir número de alumnos por grupo
     - Capturar calificaciones
     - Imprimir calificaciones
     */
@@ -23,7 +23,7 @@ public class EVA1_11_EJEMPLO_ARREGLOS {
         
         Scanner input = new Scanner(System.in);
         
-        int i, j;
+        int i, j, k, l;
         
         // Pedir número de grupos
         System.out.println("¿Cuántos grupos se van a capturar? Ingresa un valor entero.");
@@ -75,9 +75,16 @@ public class EVA1_11_EJEMPLO_ARREGLOS {
                 arregloCalif[i][j] = calificaciones;                                    
             }
             
-            // Salto de línea
             System.out.println("");
-            System.out.println("\nCalificación alumno " + (j + 1) + ", grupo " + (i + 1) + ": " + arregloCalif[i][j]);
-        }           
+        }
+        
+        for (k = 0; k < arregloCalif.length; k++) {
+            System.out.println("Calificaciónes del grupo: " + (k + 1));
+            for (l = 0; l < arregloCalif[k].length; l++) {
+                System.out.println("Alumno " + (k + 1) + ": " + arregloCalif[k][l]);
+            }
+            
+            System.out.println("");
+        }
     }
-}  
+}    
