@@ -23,6 +23,7 @@ public class EVA1_11_EJEMPLO_ARREGLOS {
         
         Scanner input = new Scanner(System.in);
         
+        // Declarar variables para los ciclos
         int i, j, k, l;
         
         // Pedir número de grupos
@@ -60,6 +61,7 @@ public class EVA1_11_EJEMPLO_ARREGLOS {
             // Determinar el número de alumnos por grupo en el arreglo
             arregloCalif[i] = new int[alumnos];
             
+            // Imprimir el número de alumnos por grupo
             System.out.println("Número de alumnos en el grupo " + (i+1) + ":");
             System.out.println(arregloCalif[i].length + "\n");
             
@@ -78,6 +80,7 @@ public class EVA1_11_EJEMPLO_ARREGLOS {
             System.out.println("");
         }
         
+        // Ciclo que imprime el grupo, los alumnos y sus respectivas calificaciones
         for (k = 0; k < arregloCalif.length; k++) {
             System.out.println("Calificaciónes del grupo: " + (k + 1));
             for (l = 0; l < arregloCalif[k].length; l++) {
@@ -87,4 +90,4 @@ public class EVA1_11_EJEMPLO_ARREGLOS {
             System.out.println("");
         }
     }
-}   
+}  
