@@ -81,10 +81,10 @@ public class EVA1_11_EJEMPLO_ARREGLOS {
         for (k = 0; k < arregloCalif.length; k++) {
             System.out.println("Calificaciónes del grupo: " + (k + 1));
             for (l = 0; l < arregloCalif[k].length; l++) {
-                System.out.println("Alumno " + (k + 1) + ": " + arregloCalif[k][l]);
+                System.out.println("Calificación alumno " + (l + 1) + ": " + arregloCalif[k][l]);
             }
             
             System.out.println("");
         }
     }
-}    
+}   
