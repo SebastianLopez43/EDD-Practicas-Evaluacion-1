@@ -16,7 +16,8 @@ public class EVA1_16_EJERCICIO_ARREGLOS_5 {
     */
     
     public static void main(String[] args) {
-                
+        int num;
+        
         // Crear arreglo con 50 elementos
         int[] numArray = new int[50];
         
@@ -28,27 +29,31 @@ public class EVA1_16_EJERCICIO_ARREGLOS_5 {
         System.out.println("");
         imprimir(numArray);
         System.out.println("");
-        
-        // Llamada a función que determinar si un número es par o no en el primer arreglo
-        numPar(numArray);
                                 
-        // Crear segundo arreglo que guarda valores pares
-        int[] numPairArray = new int[numArray.length];
+        // Crear segundo arreglo que guardará números pares
+        int[] numPairArray = new int[numArray.length];        
         
-        // Llamada a función que determina si son pares o no
-        numPar(numPairArray);
+        // Creamos una copia del primer arreglo
+        for (int i = 0; i < numArray.length; i++) {
+            numPairArray[i] = numArray[i];            
+        }
         
         // Llamada a función que imprime el segundo arreglo
         System.out.println("    Lista de valores (Segundo arreglo)    ");
         System.out.println("");
         imprimir(numPairArray);
         
-        // Creamos una copia del primer arreglo
-        for (int i = 0; i < numArray.length; i++) {
-            numPairArray[i] = numArray[i];
-            
-        }
+        System.out.println("");
+        System.out.println(" Segundo Arreglo (Número Pares");
+        System.out.println("");
         
+        // Ciclo que agrega únicamente los números pares al segundo arreglo
+        for (int i = 0; i < numArray.length; i++) {
+            if (numArray[i] % 2 == 0) {
+                numPairArray[i] = numArray[i];
+                System.out.println("Valor: [ " + numPairArray[i] + " ]");
+            }
+        }
     }
     
     // Función que llena arreglos con valores entre uno y 100
@@ -62,16 +67,6 @@ public class EVA1_16_EJERCICIO_ARREGLOS_5 {
     public static void imprimir(int[] arreglo) {
         for (int i = 0; i < arreglo.length; i++) {
             System.out.println("Valor " + (i+1) + ": [ " + arreglo[i] + " ]");
-        }
-    }
-    
-    // Función que determinar si un número es par o impar
-    public static void numPar(int[] arreglo) {
-        for (int i = 0; i < arreglo.length; i++) {
-            if (arreglo[i] % 2 == 0){
-                arreglo[i] = arreglo[i];
-            }
-            //arreglo[i]
         }
     }
 }
