@@ -13,7 +13,7 @@ public class EVA1_17_EJERCICIO_ARREGLOS_3 {
     
     public static void main(String[] args) {
         
-        // 60 enteros
+        // Creamos un arreglo de 25 enteros
         int[][] matrizQuinta = new int[5][5];
         
         // Primera dimensión (5 columnas)
@@ -22,32 +22,30 @@ public class EVA1_17_EJERCICIO_ARREGLOS_3 {
             for(int j = 0; j < matrizQuinta[i].length; j++) {
                 matrizQuinta[i][j] = ((int)(Math.random() * 100)) + 1;
             }
-        }
+        }        
         
-        System.out.println("");
         System.out.println("    Matriz con cinco columnas y cinco filas");
         System.out.println("");                
         
-        // Llamada a función imprimir
+        // Imprimir matriz de 5 x 5
         imprimir(matrizQuinta);
         
-        // Crear arreglo inverso al primer arreglo
+        // Crear segundo arreglo, el cual, será el inverso del primer arreglo
         int[][] matrizInversa = new int [5][5];
         
-        
+        // Ciclo que agrega cada elemento del primer arreglo en el segundo de manera inversa
         for (int i = 0; i < matrizQuinta.length; i++) {
-            matrizInversa[i] = matrizQuinta[(matrizQuinta.length - 1) - i];
-            for (int j = 0; j < 10; j++) {
-                matrizInversa[i][j] = matrizQuinta[(matrizQuinta[i].length - 1) - i][(matrizQuinta[i][j] - 1) - j];
-                System.out.println("[ " + matrizInversa[i][j] + " ]");
+            for (int j = 0; j < matrizQuinta[i].length; j++) {
+                matrizInversa[i][j] = matrizQuinta[(matrizQuinta.length - 1) - i][(matrizQuinta[i].length - 1) - j];
             }
-            System.out.println("");
         }
         
-        // Salto de línea
         System.out.println("");
         System.out.println("    Matriz inversa");
+        System.out.println("");
         
+        // Imprimir matriz inversa
+        imprimir(matrizInversa);
     }
     
     // Función que imprime el arreglo
