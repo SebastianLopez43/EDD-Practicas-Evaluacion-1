@@ -44,14 +44,14 @@ public class EVA1_16_EJERCICIO_ARREGLOS_5 {
         imprimir(numPairArray);
         
         System.out.println("");
-        System.out.println(" Segundo Arreglo (Número Pares");
+        System.out.println(" Segundo Arreglo (Número Pares)");
         System.out.println("");
         
         // Ciclo que agrega únicamente los números pares al segundo arreglo
         for (int i = 0; i < numArray.length; i++) {
             if (numArray[i] % 2 == 0) {
                 numPairArray[i] = numArray[i];
-                System.out.println("Valor: [ " + numPairArray[i] + " ]");
+                System.out.println("Número " + (i+1) + " de la lista: [ " + numPairArray[i] + " ]");
             }
         }
     }
