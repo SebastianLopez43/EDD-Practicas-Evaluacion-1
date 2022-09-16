@@ -18,8 +18,10 @@ public class EVA1_12_COPIA_OBJETOS {
         PASO POR REFERENCIA
         */
         
+        // Creamos variables enteras
         int valor, copiaValor;
         
+        // Asignamos valor
         valor = 100;
         
         // Respaldo
@@ -40,8 +42,8 @@ public class EVA1_12_COPIA_OBJETOS {
         PruebaValor prueba = new PruebaValor();
         prueba.c = 5000;
         
-        PruebaValor pruebaCopia = new PruebaValor();
         // Asignamos la dirección de la variable prueba a la variable pruebaCopia
+        PruebaValor pruebaCopia = new PruebaValor();        
         pruebaCopia = prueba;
         
         System.out.println("    Copia de objetos");
