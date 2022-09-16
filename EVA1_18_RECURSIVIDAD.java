@@ -1,4 +1,5 @@
 package eva1_18_recursividad;
+import java.util.Scanner;
 
 /**
  * @author José Sebastian López Ibarra
@@ -22,17 +23,52 @@ public class EVA1_18_RECURSIVIDAD {
     
     public static void main(String[] args) { 
         
-        // Método recursivo que ordena los números de forma descendente
-        System.out.println("Números descendentes\n");
-        falsoForDes(8);
-        System.out.println("");
+        // Creamos un objeto de entrada de texto
+        Scanner input = new Scanner(System.in);
         
+        // Creamos variables de números entera
+        int numDes, numAscIni, numAscFin;
+        
+        System.out.println("- Forma descendente de un número -\n");
+        
+        // Preguntamos al usuario el número a evaluar
+        System.out.println("Introduce un número mayor a 0: ");
+        numDes = input.nextInt();
+        
+        // Condición de no negatividad
+        if (numDes <= 0) {
+            System.out.println("Introduce un número mayor a 0: ");
+            numDes = input.nextInt();
+        }
+        
+        // Método recursivo que ordena los números de forma descendente
+        System.out.println("\nNúmeros descendentes\n");
+        falsoForDes(numDes);
+        System.out.println("\n");
+                
+        System.out.println("- Forma ascendente de un número -\n");        
+        
+        // Preguntamos al usuario los números a evaluar
+        System.out.println("Introduce un número mayor a 0: ");
+        numAscFin = input.nextInt();
+        System.out.println("Introduce un número menor al ya introducido: ");
+        numAscIni = input.nextInt();
+                
+        // Condición de no negatividad
+        if (numAscFin <= 0) {
+            System.out.println("Introduce un número mayor a 0: ");
+            numAscFin = input.nextInt();
+        } else if (numAscIni <= 0) {
+            System.out.println("Introduce un número menor al ya introducido: ");
+            numAscIni = input.nextInt();
+        }
+                
         // Método recursivo que ordena los números de forma ascendente
         // Primer valor = Número al que se quiere llegar
         // Segundo valor = Número donde comienza
         System.out.println("");
         System.out.println("Números ascendentes\n");
-        falsoForAsc(7, 1);
+        falsoForAsc(numAscFin, numAscIni);
         System.out.println("");
     }
     
