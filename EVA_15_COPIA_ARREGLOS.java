@@ -27,7 +27,7 @@ public class EVA1_15_COPIA_ARREGLOS {
         imprimir(arrayDatos);
         System.out.println("");
         
-        //Copia de los valores
+        //Copia de los valores del primer arreglo en el segundo
         for (int i = 0; i < arrayDatos.length; i++) {
             arrayCopia[i] = arrayDatos[i];
         }
@@ -45,14 +45,14 @@ public class EVA1_15_COPIA_ARREGLOS {
         }
         
         // Llamada a función que imprime el segundo arreglo de manera inversa
-        System.out.println("Primer arreglo invertido");
+        System.out.println("Arreglo invertido");
         imprimir(arrayCopia);
     }
     
     // Función que llena una arreglo con números aleatorios entre 1 y 100
     public static void llenar(int[] array){
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random()*10);
+            array[i] = (int) (Math.random()*100);
         }
     }
     
