@@ -56,7 +56,7 @@ public class EVA1_16_EJERCICIO_ARREGLOS_5 {
         }
     }
     
-    // Función que llena arreglos con valores entre uno y 100
+    // Función que llena arreglos con valores entre 1 y 100
     public static void llenar(int[] arreglo) {
         for (int i = 0; i < arreglo.length; i++) {
             arreglo[i] = (int) (Math.random() * 100);
