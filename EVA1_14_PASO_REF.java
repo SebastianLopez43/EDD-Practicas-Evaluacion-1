@@ -13,21 +13,25 @@ public class EVA1_14_PASO_REF {
     
     public static void main(String[] args) {
         
+        // Creamos arreglo de enteros
         int[] arregloDatos = new int[100];
         
+        // Función que llena el arreglo con números aleatorios
         llenar(arregloDatos);
+        
+        // Función que imprime el arreglo
         imprimir(arregloDatos);
     }    
     
-    public static void llenar(int[] arreglo) {
+    public static void llenar(int[] arreglo) {        
         for (int i = 0; i < arreglo.length; i++) {
-            arreglo[i] = 100;
+            arreglo[i] = (int)(Math.random() * 100);
         }
     }
     
     public static void imprimir(int[] arreglo) {
         for (int i = 0; i < arreglo.length; i++) {
-            System.out.println("[ " + arreglo[i] + " ]");
+            System.out.println("Valor " + (i+1) + " :[ " + arreglo[i] + " ]");
         }
     }
 }
