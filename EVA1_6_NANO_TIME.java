@@ -12,6 +12,8 @@ public class EVA1_6_NANO_TIME {
      */
     
     public static void main(String[] args) {
+        
+        // Función que determina el tiempo utilizado
         System.out.println(System.nanoTime());
         
         long inicio = System.nanoTime();
@@ -20,6 +22,7 @@ public class EVA1_6_NANO_TIME {
         long fin = System.nanoTime();
         long tiempo = fin - inicio;
         
+        // Tiempo empleado
         System.out.println(tiempo);
     }
 }
