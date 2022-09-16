@@ -16,10 +16,9 @@ public class EVA1_17_EJERCICIO_ARREGLOS_3 {
         // Creamos un arreglo de 25 enteros
         int[][] matrizQuinta = new int[5][5];
         
-        // Primera dimensión (5 columnas)
-        for(int i = 0; i < matrizQuinta.length; i++){
-            // Segunda dimensión (5 filas)
-            for(int j = 0; j < matrizQuinta[i].length; j++) {
+        // Ciclo que agrega números aleatorios entre 1 y 100
+        for(int i = 0; i < matrizQuinta.length; i++){ // Primera dimensión (5 columnas)            
+            for(int j = 0; j < matrizQuinta[i].length; j++) { // Segunda dimensión (5 filas)                
                 matrizQuinta[i][j] = ((int)(Math.random() * 100)) + 1;
             }
         }        
@@ -48,7 +47,7 @@ public class EVA1_17_EJERCICIO_ARREGLOS_3 {
         imprimir(matrizInversa);
     }
     
-    // Función que imprime el arreglo
+    // Función que imprime el arreglo en forma matricial
     public static void imprimir(int[][] arreglo) {
     for(int i = 0; i < arreglo.length; i++) {
             for(int j = 0; j < arreglo[i].length; j++) {                  
