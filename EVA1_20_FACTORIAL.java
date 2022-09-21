@@ -26,7 +26,7 @@ public class EVA1_20_FACTORIAL {
     1! = 1 * 0!
     */
     
-    public static void main(String[] args) {
+    public static void main(String[] args) {                                        
         
         System.out.println("- Programa que determina el factorial de un número -\n");
         
@@ -34,15 +34,25 @@ public class EVA1_20_FACTORIAL {
         Scanner input = new Scanner(System.in);
         
         // Creamos variable de número entera
-        int numFact;
+        int numFact, continuar;
         
-        // Preguntamos al usuario el número a evaluar
-        System.out.println("Ingresa un número mayor a 0: ");
-        numFact = input.nextInt();
+        do{
         
-        // Método recurisvo que determina el factorial de un número
-        System.out.println("\nEl factorial de " + numFact + " es:");
-        System.out.println(factorial(numFact));
+            // Preguntamos al usuario el número a evaluar
+            System.out.println("Ingresa un número mayor a 0: ");
+            numFact = input.nextInt();
+            
+            // Método recurisvo que determina el factorial de un número
+            System.out.println("\nEl factorial de " + numFact + " es:");
+            System.out.println(factorial(numFact));
+            System.out.println("");
+            
+            System.out.println("¿Quieres volver a usar el programa? Si = 0/No = 1");
+            continuar = input.nextInt();
+            System.out.println("");
+            
+        } while(continuar != 1);
+            System.out.println("Programa finalizado");
     }
 
     public static int factorial(int num) {
@@ -52,5 +62,5 @@ public class EVA1_20_FACTORIAL {
         } else {
             return num * factorial(num - 1);
         }            
-    }
+    }         
 }
