@@ -13,7 +13,7 @@ public class EVA1_22_FIBONACCI {
      */       
     
     public static void main(String[] args) {
-        
+                
         Scanner input = new Scanner(System.in);
         
         /* 
@@ -23,14 +23,16 @@ public class EVA1_22_FIBONACCI {
         int serie;
         
         // Preguntamos al usuario que introduzca la posición de la serie que desesa saber.
-        System.out.println("Introduce la posición de la serie de Fibonacci deseada (no mayor de 50): ");
+        System.out.println("Introduce la posición de la serie de Fibonacci deseada (no mayor de 20): ");
         serie = input.nextInt();
+        System.out.println("");
  
         System.out.println("Serie de Fibonacci:");
         
         // Ciclo que imprime cada uno de los números 
-        for (int i = 0; i < serie; i++) { 
-            System.out.print(fibonacciRecursivo(i) +",");
+        for (int i = 0; i <= serie; i++) { 
+            System.out.print("Posición " + i + ". " + fibonacciRecursivo(i));
+            System.out.println("");
         }
     }
  
